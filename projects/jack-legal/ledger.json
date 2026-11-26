@@ -1,9 +1,55 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "slug": "jack-legal",
+  "sectors": {
+    "sec-01-contract-and-delivery": {
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": ""
+    },
+    "sec-02-corporate-and-equity": {
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": ""
+    },
+    "sec-03-financing-and-guarantee": {
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": ""
+    },
+    "sec-04-labor-ip-and-secret": {
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": ""
+    },
+    "sec-05-tax-and-regulatory": {
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": ""
+    },
+    "sec-06-dispute-and-enforcement": {
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": ""
+    },
+    "sec-07-criminal-redlines": {
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": ""
+    },
+    "sec-08-lawyer-management": {
+      "depth": "L1_panoramic",
+      "acceptance": "embraced",
+      "stance_note": "基于 ai-distill 评测构建经验，已初步看清法条背诵与真实办案的鸿沟"
+    }
+  },
   "nodes": {
     "mm-01-claim-basis-dispatch": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -12,6 +58,10 @@
     },
     "mm-02-obligation-vs-disposition": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -20,6 +70,10 @@
     },
     "mm-03-evidence-log-hierarchy": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -28,6 +82,10 @@
     },
     "mm-04-procedural-gates-and-time-locks": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -36,6 +94,10 @@
     },
     "mm-05-waterfall-and-net-payoff": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -44,6 +106,10 @@
     },
     "fl-01-pe-repurchase-vs-capital-reduction": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -52,6 +118,10 @@
     },
     "fl-02-unauthorized-guarantee-vs-apparent-authority": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -60,6 +130,46 @@
     },
     "fl-03-deemed-acceptance-vs-fundamental-breach": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "fl-04-criminal-civil-crossover-redlines": {
+      "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "fl-05-new-company-law-capital-and-veil": {
+      "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "fl-06-ip-ownership-labor-2n-and-tax-4flow": {
+      "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.35,
       "attempts": 0,
       "last_verdict": null,
@@ -68,6 +178,10 @@
     },
     "tw-01-chop-without-resolution": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.40,
       "attempts": 0,
       "last_verdict": null,
@@ -76,6 +190,10 @@
     },
     "tw-02-hard-caducity-timeout": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.40,
       "attempts": 0,
       "last_verdict": null,
@@ -84,6 +202,10 @@
     },
     "tw-03-self-help-cut-without-clause": {
       "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
       "confidence": 0.40,
       "attempts": 0,
       "last_verdict": null,
@@ -91,25 +213,45 @@
       "evidence_refs": []
     },
     "pb-01-ai-legal-55pct-radar": {
-      "mastery": "battle_proven",
-      "confidence": 0.90,
+      "mastery": "probed",
+      "depth": "L1_panoramic",
+      "acceptance": "embraced",
+      "stance_note": "来自 ai-distill 评测规范提炼，待实案鉴谎演练晋升 L3",
+      "workaround": "",
+      "confidence": 0.70,
       "attempts": 1,
-      "last_verdict": "harvested_from_work",
+      "last_verdict": "panorama_mapped",
       "retest_required": false,
       "evidence_refs": [
         "raw/sources/2026-11-26-work-legal-sota-55pct.md"
       ]
     },
+    "pb-02-lawyer-fee-and-bs-detector": {
+      "mastery": "mapped",
+      "depth": "L0_unseen",
+      "acceptance": "unassessed",
+      "stance_note": "",
+      "workaround": "",
+      "confidence": 0.45,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
     "sp-01-why-sota-models-fail-real-law": {
-      "mastery": "battle_proven",
-      "confidence": 0.92,
+      "mastery": "probed",
+      "depth": "L1_panoramic",
+      "acceptance": "embraced",
+      "stance_note": "",
+      "workaround": "",
+      "confidence": 0.72,
       "attempts": 1,
-      "last_verdict": "harvested_from_work",
+      "last_verdict": "panorama_mapped",
       "retest_required": false,
       "evidence_refs": [
         "raw/sources/2026-11-26-work-legal-sota-55pct.md"
       ]
     }
   },
-  "updated_at": "2026-11-26T15:25:00+08:00"
+  "updated_at": "2026-11-26T17:40:00+08:00"
 }

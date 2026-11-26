@@ -1,14 +1,15 @@
 {
-  "schema_version": 3,
-  "generated_at": "2026-11-26T07:31:53.688Z",
+  "schema_version": 4,
+  "generated_at": "2026-11-26T09:49:19.176Z",
   "stats": {
-    "total_nodes": 19,
-    "total_edges": 80,
+    "total_nodes": 23,
+    "total_edges": 100,
+    "accommodation_walls": 4,
     "by_type": {
       "master-os": 4,
       "concept": 5,
-      "fault-line": 3,
-      "playbook": 1,
+      "fault-line": 6,
+      "playbook": 2,
       "tripwire": 3,
       "spark": 2
     },
@@ -16,22 +17,22 @@
       {
         "id": "mos-01-endgame-and-leverage",
         "title": "母法一：终局底牌与筹码锚定（谁捏着命门、凭什么要结果）",
-        "connected_edges": 8
+        "connected_edges": 9
       },
       {
         "id": "mos-02-state-locks-and-gates",
         "title": "母法二：状态锁与不可逆闸门（区分答应与交割、盯死硬熔断）",
-        "connected_edges": 18
+        "connected_edges": 21
       },
       {
         "id": "mos-03-asymmetric-payoff",
         "title": "母法三：非对称赔率与底账穿透（只认不可变底账、算净落袋收益）",
-        "connected_edges": 12
+        "connected_edges": 14
       },
       {
         "id": "mos-04-lateral-restructure",
         "title": "母法四：升维改规矩与 AI 苦力外包（野路子破死局，80%细节甩给AI）",
-        "connected_edges": 12
+        "connected_edges": 16
       }
     ]
   },
@@ -51,8 +52,8 @@
         "ai-agent"
       ],
       "path": "wiki/overview.md",
-      "summary": "本图谱不是按学科堆砌的教材仓库，而是围绕你自己的四步通用破局母法（Master OS）运转的星系网络：不管是系统闯关立项（如 `jack-legal`），还是平时写代码、做 `ai",
-      "degree": 17
+      "summary": "本图谱不是按学科堆砌的教材仓库，而是围绕你自己的四步通用破局母法（Master OS）运转的星系网络：不管是系统闯关立项（如 `jack-legal`），还是平时写代码、做 `ai-dist",
+      "degree": 22
     },
     {
       "id": "mos-01-endgame-and-leverage",
@@ -69,7 +70,7 @@
       ],
       "path": "wiki/master-os/mos-01-endgame-and-leverage.md",
       "summary": "面对任何一团乱麻的技术故障、商业扯皮或陌生行业难题，绝不顺着别人的情绪或章节顺序往下陷，第一秒直接倒推终局：",
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "mos-02-state-locks-and-gates",
@@ -86,7 +87,7 @@
       ],
       "path": "wiki/master-os/mos-02-state-locks-and-gates.md",
       "summary": "一切复杂系统本质上都是状态机。平庸者看表态，高手只盯状态跃迁的硬锁：",
-      "degree": 18
+      "degree": 21
     },
     {
       "id": "mos-03-asymmetric-payoff",
@@ -103,7 +104,7 @@
       ],
       "path": "wiki/master-os/mos-03-asymmetric-payoff.md",
       "summary": "不听故事、不看表面大数字，永远做两层穿透：",
-      "degree": 12
+      "degree": 14
     },
     {
       "id": "mos-04-lateral-restructure",
@@ -120,7 +121,7 @@
       ],
       "path": "wiki/master-os/mos-04-lateral-restructure.md",
       "summary": "这是你对比传统专家与细节控最大的非对称优势：",
-      "degree": 12
+      "degree": 16
     },
     {
       "id": "mm-01-claim-basis-dispatch",
@@ -137,7 +138,7 @@
         "claim-basis"
       ],
       "path": "wiki/concepts/mm-01-claim-basis-dispatch.md",
-      "summary": "直挂 [[mos-01-endgame-and-leverage]]：像后端 API 路由鉴权一样，不喊委屈，第一秒先锁死「谁 → 找谁 → 调哪条合同/法律接口 → 拿什么结果」",
+      "summary": "直挂 [[mos-01-endgame-and-leverage]]：像后端 API 路由鉴权一样，不喊委屈，第一秒先锁死「谁 → 找谁 → 调哪条合同/法律接口 → 拿什么结果」。",
       "degree": 10
     },
     {
@@ -155,8 +156,8 @@
         "property-vs-contract"
       ],
       "path": "wiki/concepts/mm-02-obligation-vs-disposition.md",
-      "summary": "直挂 [[mos-02-state-locks-and-gates]]：完全等价于分布式系统里的下单返回 `Promise`（签合同产生相对债权）与底层账本最终 `Commit`（",
-      "degree": 8
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]：完全等价于分布式系统里的下单返回 `Promise`（签合同产生相对债权）与底层账本最终 `Commit`（过户/交付",
+      "degree": 9
     },
     {
       "id": "mm-03-evidence-log-hierarchy",
@@ -173,8 +174,8 @@
         "evidence"
       ],
       "path": "wiki/concepts/mm-03-evidence-log-hierarchy.md",
-      "summary": "直挂 [[mos-03-asymmetric-payoff]]：就像排查线上资损只信银行清算网关日志、绝不信客户端上报字段一样，法律只认证据能闭环还原的事实，不认“你自己知道的客观",
-      "degree": 8
+      "summary": "直挂 [[mos-03-asymmetric-payoff]]：就像排查线上资损只信银行清算网关日志、绝不信客户端上报字段一样，法律只认证据能闭环还原的事实，不认“你自己知道的客观真相”。",
+      "degree": 9
     },
     {
       "id": "mm-04-procedural-gates-and-time-locks",
@@ -192,8 +193,8 @@
         "deadline"
       ],
       "path": "wiki/concepts/mm-04-procedural-gates-and-time-locks.md",
-      "summary": "直挂 [[mos-02-state-locks-and-gates]]：相当于网关层的路由白名单（管辖/仲裁）+ 前置阻塞中间件 + 两种截然不同的超时器，程序门没开，实体再有理也",
-      "degree": 7
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]：相当于网关层的路由白名单（管辖/仲裁）+ 前置阻塞中间件 + 两种截然不同的超时器，程序门没开，实体再有理也直接拒之门",
+      "degree": 8
     },
     {
       "id": "mm-05-waterfall-and-net-payoff",
@@ -212,7 +213,7 @@
       ],
       "path": "wiki/concepts/mm-05-waterfall-and-net-payoff.md",
       "summary": "直挂 [[mos-03-asymmetric-payoff]]：不看胜诉判决书上的面子数字，只算资金清分瀑布流（Waterfall）流到你这一层还剩几分钱真现金。",
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "fl-01-pe-repurchase-vs-capital-reduction",
@@ -231,7 +232,7 @@
         "corporate"
       ],
       "path": "wiki/fault-lines/fl-01-pe-repurchase-vs-capital-reduction.md",
-      "summary": "直挂 [[mos-02-state-locks-and-gates]] + [[mos-04-lateral-restructure]]：普通商业协议（User Space）撞上了",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]] + [[mos-04-lateral-restructure]]：普通商业协议（User Space）撞上了《公司法》",
       "degree": 7
     },
     {
@@ -250,7 +251,7 @@
         "corporate"
       ],
       "path": "wiki/fault-lines/fl-02-unauthorized-guarantee-vs-apparent-authority.md",
-      "summary": "直挂 [[mos-02-state-locks-and-gates]]：普通买卖认单签（公章），唯独“替别人担保兜底”在全国法律层面强制开启了多签（Multi-Sig：`真公章 +",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]：普通买卖认单签（公章），唯独“替别人担保兜底”在全国法律层面强制开启了多签（Multi-Sig：`真公章 + 合格股东",
       "degree": 6
     },
     {
@@ -270,16 +271,77 @@
         "acceptance"
       ],
       "path": "wiki/fault-lines/fl-03-deemed-acceptance-vs-fundamental-breach.md",
-      "summary": "直挂 [[mos-04-lateral-restructure]] + [[mos-03-asymmetric-payoff]]：靠一纸“10 天不回函视为合格”打官司追尾款是下策",
+      "summary": "直挂 [[mos-04-lateral-restructure]] + [[mos-03-asymmetric-payoff]]：靠一纸“10 天不回函视为合格”打官司追尾款是下策，前置收款",
       "degree": 7
+    },
+    {
+      "id": "fl-04-criminal-civil-crossover-redlines",
+      "type": "fault-line",
+      "title": "保命底线：创业者与技术人严禁野路子试探的四条“民转刑”高压墙",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-02-state-locks-and-gates",
+        "mos-04-lateral-restructure"
+      ],
+      "tags": [
+        "legal",
+        "criminal-redline",
+        "tech-risk"
+      ],
+      "path": "wiki/fault-lines/fl-04-criminal-civil-crossover-redlines.md",
+      "summary": "挂载 [[mos-02-state-locks-and-gates]]，并对 [[mos-04-lateral-restructure]] 拉响 `breaks_intuition_of` ",
+      "degree": 4
+    },
+    {
+      "id": "fl-05-new-company-law-capital-and-veil",
+      "type": "fault-line",
+      "title": "公司底盘大变天：认缴加速到期、转股前手追责与“刺破公司面纱”",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-02-state-locks-and-gates",
+        "mos-03-asymmetric-payoff"
+      ],
+      "tags": [
+        "legal",
+        "company-law",
+        "equity"
+      ],
+      "path": "wiki/fault-lines/fl-05-new-company-law-capital-and-veil.md",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]] + [[mos-03-asymmetric-payoff]]：“有限责任公司只赔注册资本、亏光了也不烧老板个人房子”这",
+      "degree": 5
+    },
+    {
+      "id": "fl-06-ip-ownership-labor-2n-and-tax-4flow",
+      "type": "fault-line",
+      "title": "科技公司三大日常暗坑：外包源码归乙方、愤怒裁员赔2N、专票四流红线",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-02-state-locks-and-gates",
+        "mos-03-asymmetric-payoff"
+      ],
+      "tags": [
+        "legal",
+        "ip",
+        "labor",
+        "tax"
+      ],
+      "path": "wiki/fault-lines/fl-06-ip-ownership-labor-2n-and-tax-4flow.md",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]，并对 [[mos-04-lateral-restructure]] 标记 `breaks_intuition_of`：",
+      "degree": 4
     },
     {
       "id": "pb-01-ai-legal-55pct-radar",
       "type": "playbook",
       "title": "武器卡 01：30 秒看穿 AI 法务方案“假专业”的五眼雷达",
       "domain": "legal",
-      "mastery": "battle_proven",
-      "confidence": 0.9,
+      "mastery": "probed",
+      "confidence": 0.7,
       "hubs": [
         "mos-03-asymmetric-payoff",
         "mos-04-lateral-restructure"
@@ -292,7 +354,28 @@
       ],
       "path": "wiki/playbooks/pb-01-ai-legal-55pct-radar.md",
       "summary": "即战用途：审 `ai-distill` 法律题包/模型答卷，或看外聘律师/AI 写的合同意见书时，不用读完几千字，只扫这 5 眼：",
-      "degree": 7
+      "degree": 8
+    },
+    {
+      "id": "pb-02-lawyer-fee-and-bs-detector",
+      "type": "playbook",
+      "title": "武器卡 02：外聘律师四大收费猫腻与五句镇场鉴谎刀",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.45,
+      "hubs": [
+        "mos-01-endgame-and-leverage",
+        "mos-03-asymmetric-payoff"
+      ],
+      "tags": [
+        "playbook",
+        "weapon-card",
+        "lawyer-management",
+        "anti-bs"
+      ],
+      "path": "wiki/playbooks/pb-02-lawyer-fee-and-bs-detector.md",
+      "summary": "核心认知：法律服务存在极强的委托-代理利益错位——律师赚的是代理费和免责安全，你要的是商业净回款与成交效率。用这套工具平视控场，没人敢拿行话忽悠你。",
+      "degree": 5
     },
     {
       "id": "tw-01-chop-without-resolution",
@@ -350,15 +433,15 @@
       ],
       "path": "wiki/tripwires/tw-03-self-help-cut-without-clause.md",
       "summary": "- 发散者为什么会踩：遇到甲方拖欠尾款，技术人第一反应“我直接把线上服务停了或埋个逻辑锁看他急不急”。",
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "sp-01-why-sota-models-fail-real-law",
       "type": "spark",
       "title": "实战火花 01：背熟全量法条的大模型为何在真案卷前只考 ≤55%？",
       "domain": "legal-ai",
-      "mastery": "battle_proven",
-      "confidence": 0.92,
+      "mastery": "probed",
+      "confidence": 0.72,
       "hubs": [
         "mos-03-asymmetric-payoff",
         "mos-04-lateral-restructure"
@@ -369,7 +452,7 @@
         "meta-learning"
       ],
       "path": "wiki/sparks/sp-01-why-sota-models-fail-real-law.md",
-      "summary": "直挂 [[mos-03-asymmetric-payoff]] + [[mos-04-lateral-restructure]]：这直接从反面证明了“学法务千万别去背条文和格式”—",
+      "summary": "直挂 [[mos-03-asymmetric-payoff]] + [[mos-04-lateral-restructure]]：这直接从反面证明了“学法务千万别去背条文和格式”——因为连背",
       "degree": 7
     },
     {
@@ -388,7 +471,7 @@
       ],
       "path": "wiki/sparks/sp-02-intent-vs-lease-lock.md",
       "summary": "直挂 [[mos-02-state-locks-and-gates]]，跨界联动 [[mm-02-obligation-vs-disposition]]。",
-      "degree": 2
+      "degree": 3
     }
   ],
   "edges": [
@@ -466,6 +549,24 @@
     },
     {
       "source": "overview",
+      "target": "fl-04-criminal-civil-crossover-redlines",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "fl-05-new-company-law-capital-and-veil",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "fl-06-ip-ownership-labor-2n-and-tax-4flow",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
       "target": "tw-01-chop-without-resolution",
       "rel": "mentions",
       "explicit": false
@@ -490,7 +591,19 @@
     },
     {
       "source": "overview",
+      "target": "pb-02-lawyer-fee-and-bs-detector",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
       "target": "sp-01-why-sota-models-fail-real-law",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "sp-02-intent-vs-lease-lock",
       "rel": "mentions",
       "explicit": false
     },
@@ -682,6 +795,12 @@
     },
     {
       "source": "mm-04-procedural-gates-and-time-locks",
+      "target": "mos-04-lateral-restructure",
+      "rel": "breaks_intuition_of",
+      "explicit": true
+    },
+    {
+      "source": "mm-04-procedural-gates-and-time-locks",
       "target": "tw-02-hard-caducity-timeout",
       "rel": "guards_against",
       "explicit": true
@@ -771,6 +890,66 @@
       "explicit": true
     },
     {
+      "source": "fl-04-criminal-civil-crossover-redlines",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-04-criminal-civil-crossover-redlines",
+      "target": "mos-04-lateral-restructure",
+      "rel": "breaks_intuition_of",
+      "explicit": true
+    },
+    {
+      "source": "fl-04-criminal-civil-crossover-redlines",
+      "target": "tw-03-self-help-cut-without-clause",
+      "rel": "guards_against",
+      "explicit": true
+    },
+    {
+      "source": "fl-05-new-company-law-capital-and-veil",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-05-new-company-law-capital-and-veil",
+      "target": "mos-04-lateral-restructure",
+      "rel": "breaks_intuition_of",
+      "explicit": true
+    },
+    {
+      "source": "fl-05-new-company-law-capital-and-veil",
+      "target": "mm-02-obligation-vs-disposition",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "fl-05-new-company-law-capital-and-veil",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "fl-06-ip-ownership-labor-2n-and-tax-4flow",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-06-ip-ownership-labor-2n-and-tax-4flow",
+      "target": "mos-04-lateral-restructure",
+      "rel": "breaks_intuition_of",
+      "explicit": true
+    },
+    {
+      "source": "fl-06-ip-ownership-labor-2n-and-tax-4flow",
+      "target": "mm-03-evidence-log-hierarchy",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
       "source": "pb-01-ai-legal-55pct-radar",
       "target": "mos-03-asymmetric-payoff",
       "rel": "assimilates_into",
@@ -792,6 +971,30 @@
       "source": "pb-01-ai-legal-55pct-radar",
       "target": "tw-02-hard-caducity-timeout",
       "rel": "guards_against",
+      "explicit": true
+    },
+    {
+      "source": "pb-02-lawyer-fee-and-bs-detector",
+      "target": "mos-01-endgame-and-leverage",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "pb-02-lawyer-fee-and-bs-detector",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "pb-02-lawyer-fee-and-bs-detector",
+      "target": "mm-05-waterfall-and-net-payoff",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "pb-02-lawyer-fee-and-bs-detector",
+      "target": "pb-01-ai-legal-55pct-radar",
+      "rel": "related_lens",
       "explicit": true
     },
     {

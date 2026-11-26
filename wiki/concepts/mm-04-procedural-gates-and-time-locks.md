@@ -10,6 +10,8 @@ hubs:
 edges:
   - rel: assimilates_into
     target: mos-02-state-locks-and-gates
+  - rel: breaks_intuition_of
+    target: mos-04-lateral-restructure
   - rel: guards_against
     target: tw-02-hard-caducity-timeout
   - rel: related_lens
@@ -48,3 +50,9 @@ updated: 2026-11-26
 ## 发散者易踩的 1 颗暗雷
 
 直接锁定红队暗雷 [[tw-02-hard-caducity-timeout]]：拖延谈判却忘了硬熔断死线正在倒计时。
+
+## 行话切口与防忽悠镇场
+
+- **核心行话对译**：`除斥期间`（绝不可中断续期的硬熔断死线，超期权利清零）｜`时效中断`（发有效催收函让 3 年要债期重新起算）｜`或裁或审/一裁终局`（选了仲裁就不能去法院且基本没法上诉翻盘）｜`专属管辖`（法定锁死特定法院，合同乱写管辖无效）。
+- **律师常见忽悠**：接案时不先做期间与管辖死线排雷，收了钱拖两个月才立案，或者明知已过除斥期仍哄你交一审代理费碰运气。
+- **老板一招试深浅**：「*这事涉及的所有期限里，哪个是发函能续命的诉讼时效，哪个是一天都不能拖的除斥期间？最晚哪天必须完成动作？*」

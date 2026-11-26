@@ -3,8 +3,8 @@ id: pb-01-ai-legal-55pct-radar
 type: playbook
 title: 武器卡 01：30 秒看穿 AI 法务方案“假专业”的五眼雷达
 domain: legal
-mastery: battle_proven
-confidence: 0.90
+mastery: probed
+confidence: 0.70
 hubs:
   - mos-03-asymmetric-payoff
   - mos-04-lateral-restructure

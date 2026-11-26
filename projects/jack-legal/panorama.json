@@ -1,0 +1,124 @@
+{
+  "schema_version": 4,
+  "slug": "jack-legal",
+  "domain": "legal",
+  "mece_basis": "面向技术/AI创业者与业务主帅的 100% 商事法务全生命周期八大洲版图（整合 Work 62 类实务核查库 + 委托律师博弈管控）",
+  "sectors": [
+    {
+      "id": "sec-01-contract-and-delivery",
+      "title": "版块 01：商业合同、软件/AI 交付验收与收款锁死",
+      "priority": "core",
+      "boss_one_liner": "管住怎么签单交货，让尾款赖不掉、欠费能合法停服反制且不被反咬违约。",
+      "counter_intuition_rule": "写了『10天不回盖章函视为合格』却漏交文档或被对方在群里提P0缺陷，默示验收照样失效；没预埋合同免责条款私自停服可能倒赔或触刑。",
+      "red_alert_triggers": ["首付低于开发硬成本", "背靠背付款条款（等上家打款再付你）", "未约定欠费降级只读权限"],
+      "shibboleth_terms": ["默示验收", "根本违约", "先履行抗辩权", "违约金按实际损失130%调减"],
+      "lawyer_bs_traps": ["照抄通用模板违约金却漏写技术降级免责开关", "不核交付签收链完整性就催你起诉讨尾款"],
+      "linked_nodes": [
+        "mm-01-claim-basis-dispatch",
+        "fl-03-deemed-acceptance-vs-fundamental-breach",
+        "tw-03-self-help-cut-without-clause"
+      ]
+    },
+    {
+      "id": "sec-02-corporate-and-equity",
+      "title": "版块 02：公司控制权、2024新公司法实缴加速与防刺破面纱",
+      "priority": "core",
+      "boss_one_liner": "守住有限责任公司『亏光不烧老板个人房子』的防火墙，管好合伙分股与退出。",
+      "counter_intuition_rule": "认缴没到期甚至已经转股跑路，公司一旦欠债，债主仍能逼未实缴股东立刻掏个人存款或追前手老股东；一人公司/夫妻店公私账混用直接无限连带。",
+      "red_alert_triggers": ["高额认缴未实缴", "一人公司无年度独立审计", "个人卡/微信代收公款", "50:50平分股权僵局"],
+      "shibboleth_terms": ["出资加速到期", "未届期转股补充责任", "刺破公司面纱/人格混同", "股东知情权穿透原始凭证"],
+      "lawyer_bs_traps": ["代办顾问忽悠注册资本写大点撑门面", "转股协议签完不做工商变更与章程修改闭环"],
+      "linked_nodes": [
+        "mm-02-obligation-vs-disposition",
+        "fl-05-new-company-law-capital-and-veil"
+      ]
+    },
+    {
+      "id": "sec-03-financing-and-guarantee",
+      "title": "版块 03：投融资对赌回购、并购交割与越权对外担保",
+      "priority": "core",
+      "boss_one_liner": "防住融资对赌变成个人倾家荡产死锁，识破『真公章假担保』百万元级陷阱。",
+      "counter_intuition_rule": "法人亲手盖真公章替关联方担保，没拿回避表决后的股东会决议照样无效砍半；目标公司没走完法定减资，对赌赢了合同也判不下钱。",
+      "red_alert_triggers": ["差额补足/共同还款马甲担保", "目标公司连带回购", "触发回购后超6个月未书面行权"],
+      "shibboleth_terms": ["九民纪要第5条减资前置", "关联担保形式审查", "回购权合理行权期间", "赔偿篮子与共管释放"],
+      "lawyer_bs_traps": ["只改担保字眼不收对方股东会决议与章程", "不查减资直接起诉目标公司要回购款送人头"],
+      "linked_nodes": [
+        "fl-01-pe-repurchase-vs-capital-reduction",
+        "fl-02-unauthorized-guarantee-vs-apparent-authority",
+        "tw-01-chop-without-resolution",
+        "tw-02-hard-caducity-timeout"
+      ]
+    },
+    {
+      "id": "sec-04-labor-ip-and-secret",
+      "title": "版块 04：核心用工解雇算盘（2N）、源码/AI知产与商业秘密",
+      "priority": "core",
+      "boss_one_liner": "保住公司最值钱的源码/Agent底座权属，管好核心人员进出不赔冤枉钱。",
+      "counter_intuition_rule": "花钱找外包写代码没写归属=版权默认归乙方！劳动仲裁实行单位举证倒置，群里一句『明天别来了』铁赔2N；离职忘取消竞业白养前员工。",
+      "red_alert_triggers": ["外包/兼职开发无知产归属条款", "客户定制合同未剥离自有底层框架", "口头辞退员工", "离职未发放弃竞业通知"],
+      "shibboleth_terms": ["委托作品默认归属", "违法解除2N vs 协商N", "竞业限制断缴三个月失效", "商业秘密秘密点与接触+实质相同"],
+      "lawyer_bs_traps": ["全员套模板签高额竞业却隐瞒每月刚性补偿成本", "空谈告前员工侵犯商秘却提炼不出非公知秘密点"],
+      "linked_nodes": [
+        "fl-06-ip-ownership-labor-2n-and-tax-4flow"
+      ]
+    },
+    {
+      "id": "sec-05-tax-and-regulatory",
+      "title": "版块 05：合同税务暗坑、专票四流合一与行政处罚应对",
+      "priority": "high",
+      "boss_one_liner": "防止生意做成了却在增值税专票、多主体代付和监管罚单上爆雷倒贴。",
+      "counter_intuition_rule": "先开专票对方赖账你也得先真金白银交增值税；换壳代收代付易踩『四流不一致』虚开稽查；对追缴税款不服必须『先缴清税款滞纳金』才能复议。",
+      "red_alert_triggers": ["合同未写含税/不含税及票种", "未收款先开大额专票", "签约/收款/开票三方主体不一致"],
+      "shibboleth_terms": ["四流合一", "善意取得虚开专票", "清税前置复议锁", "首违不罚与过罚相当听证降档"],
+      "lawyer_bs_traps": ["审商业合同完全漏看开票节点与税率转嫁条款", "行政处罚告知期不抓3-5天听证窗口，等决定下了才马后炮"],
+      "linked_nodes": [
+        "fl-06-ip-ownership-labor-2n-and-tax-4flow"
+      ]
+    },
+    {
+      "id": "sec-06-dispute-and-enforcement",
+      "title": "版块 06：诉讼vs仲裁选道、证据底账、诉前财保与清偿瀑布",
+      "priority": "core",
+      "boss_one_liner": "算清打官司的真实时间与回款净现值，拒绝赢一张收不回一分钱的胜诉废纸。",
+      "counter_intuition_rule": "普通债主排在买房人、建工、抵押权和税款最底层；开打前没做诉前财保冻住活水账户，打赢一二审往往只拿到『终本白条』。",
+      "red_alert_triggers": ["无财产保全裸诉空壳公司", "把除斥期间当普通时效拖延", "单方汇总表与底层银行回单矛盾"],
+      "shibboleth_terms": ["诉前财产保全", "一裁终局", "除斥期间", "终本执行", "参与分配顺位", "证据三性与自认"],
+      "lawyer_bs_traps": ["隐瞒被告已被多家首封轮候无钱可执，吹嘘法理稳赢骗前期诉讼费"],
+      "linked_nodes": [
+        "mm-03-evidence-log-hierarchy",
+        "mm-04-procedural-gates-and-time-locks",
+        "mm-05-waterfall-and-net-payoff",
+        "tw-02-hard-caducity-timeout"
+      ]
+    },
+    {
+      "id": "sec-07-criminal-redlines",
+      "title": "版块 07：【保命高压墙】企业与技术人高频“民转刑”红线",
+      "priority": "critical",
+      "boss_one_liner": "锁死绝对不能玩野路子试探的四条铁栅栏，防自己误触刑律，也防对手以刑逼民。",
+      "counter_intuition_rule": "工程上的『抓接口数据、远程锁系统、大股东挪公款周转、败诉后换壳接单』，越过临界点直接从民事赔钱变成刑事抓人（285/286/271/224/313条）。",
+      "red_alert_triggers": ["绕过鉴权爬非公开数据", "擅自删锁客户在用系统", "有小股东时公款私用", "被查封后转移资产或虚构债务"],
+      "shibboleth_terms": ["非法占有目的", "以刑逼民", "破坏计算机信息系统罪", "职务侵占", "拒不执行判决裁定罪"],
+      "lawyer_bs_traps": ["谎称公检法有硬关系骗高额捞人费", "出馊主意让你做假借条冲抵债务直接把你送进虚假诉讼罪"],
+      "linked_nodes": [
+        "fl-04-criminal-civil-crossover-redlines",
+        "tw-03-self-help-cut-without-clause"
+      ]
+    },
+    {
+      "id": "sec-08-lawyer-management",
+      "title": "版块 08：外聘律师激励真相、收费猫腻与防忽悠管控（元专长）",
+      "priority": "critical",
+      "boss_one_liner": "看透律师靠什么赚钱、怎么甩锅藏私，用内行切口平视控场、审穿真假专业。",
+      "counter_intuition_rule": "固定收费激励律师劝你割肉快结，按小时收费激励注水写万字废话，风险代理若按『判决金额』而非『实际到账净回款』抽成会让你赢了白条还倒贴律师费！",
+      "red_alert_triggers": ["拍胸脯包赢或吹嘘法院关系", "风险代理按胜诉判项金额计费", "通篇建议审慎协商不给替代改法"],
+      "shibboleth_terms": ["实际执行回款净额计费", "红黄绿三色风险分级", "主办律师锁死条款", "利益冲突检索"],
+      "lawyer_bs_traps": ["合伙人谈单收钱、实习生套AI模板办案", "制造合规恐慌推销昂贵无效的全套制度包"],
+      "linked_nodes": [
+        "pb-01-ai-legal-55pct-radar",
+        "pb-02-lawyer-fee-and-bs-detector",
+        "sp-01-why-sota-models-fail-real-law"
+      ]
+    }
+  ]
+}

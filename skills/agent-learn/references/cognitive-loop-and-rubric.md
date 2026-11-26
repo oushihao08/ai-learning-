@@ -1,24 +1,33 @@
-# Fast-Win Sparring, 20/80 Depth Ceiling & Evaluation Rubric
+# Four Micro-Modes, Dual-Axis Rubric & Anti-BS Protocol
 
-## 1. Learner-Aligned Response Matrix
+## 1. Orthogonal Dual-Axis State Machine (`depth` × `acceptance`)
 
-Evaluate every learner move along **Strategic Leverage** and **Detail Tripwire Safety**:
+### Axis A: Cognitive Depth (`depth`)
+| Level | Meaning | Target Capability |
+| --- | --- | --- |
+| `L0_unseen` | Unmapped dark sector | Unknown unknown; must clear via `panorama` sweep first. |
+| `L1_panoramic` | Bird's-eye orientation | Knows what business life/death this sector governs, its 1 counter-intuitive law, and when to hit the brakes. |
+| `L2_conversational` | Interactional fluency | Understands core shibboleths (insider jargon <-> business reality); speaks on equal footing with specialists. |
+| `L3_radar_and_bs_proof` | Autonomous spotting & anti-deception | Spots unprompted traps in raw snippets (`xray`) AND exposes specialist fee-churning/hedging/omissions (`bullshit-audit`). |
+| `L4_mastered` | Master-OS ownership | Verified in real business execution or cross-domain structural redesign. |
 
-| Verdict Code | Learner Move | Agent Response (Keep Concise, High-Tempo) | Graph & Ledger Action |
+### Axis B: Psychological Acceptance (`acceptance` — Implicitly Inferred, Zero Surveys)
+| Stance | Natural Dialogue Signal | Mandatory Agent Adaptation |
+| --- | --- | --- |
+| `embraced` | Immediate buy-in; applies to own projects | Fast-forward; mint Playbook card and wire cross-domain links. |
+| `delegated_to_ai` | "Makes sense, but too tedious—let AI check this" | Stop quizzing mechanics; register in `delegated_ai_gates` and only test executive sign-off criteria. |
+| `friction_resistant` | "Too bureaucratic / kills deal speed / counter-intuitive!" | **Halt legalistic lecturing immediately.** Co-design a tiered threshold `workaround` (e.g. `<50w skip/personal guarantee; >=50w mandatory check`) and schedule disguised `xray` retests. |
+| `skeptical_parked` | "Not worth the cost at my stage; I'll take the risk" | Record informed risk stance; do not nag. |
+
+## 2. Verdict-to-Ledger Mapping (`learn.mjs record`)
+
+| Verdict | Mode Source | Default Depth Target | Retest Lock |
 | --- | --- | --- | --- |
-| `lateral_breakthrough` | Unconventional business/product/structural move that bypasses the deadlock + avoids fatal tripwires | Confirm win immediately; highlight why the lateral bypass beats conventional textbook play; prompt 3-sentence Boss Pre-Mortem to mint Playbook card. | `probed` or `weapon_unlocked` (`confidence >= 0.85`). |
-| `sharp_but_tripped` | Strong big-picture direction, but overlooks 1 fatal detail landmine (typical divergent blindspot) | Validate the strategic instinct first; surgically spotlight ONLY the 1 hidden tripwire (`tw-*`) and the 1-line safeguard patch. Stop before 80% minutiae. | `probed` + `retest_required: true` on linked tripwire. |
-| `calibrated_mastery` | Direct, accurate rule call with clean boundary awareness | Fast-forward! Zero redundant explanation; mint Playbook card or jump to a harder cross-domain twist. | `weapon_unlocked` (`confidence >= 0.82`). |
-| `confident_blindspot` | Applies deterministic prior-domain intuition where target-domain mandatory rule overrides | Contrast the broken intuition against the domain's 20% physics; link to `mos-*` hub; mark for variant retest. | `probed` + `retest_required: true`. |
-
-## 2. Enforcing the 20/80 Depth Ceiling
-
-- **Inside the 20% (Must Master)**: Who holds leverage, what triggers irreversible state change, which mandatory public/structural lock invalidates a deal, which evidence tier wins, and how to restructure the transaction.
-- **Outside the 20% (Offload to AI — Never Lecture)**: Exact article/clause numbering, formal legal/industry document templates, multi-period compound interest arithmetic, exhaustive historical doctrine evolution.
-
-## 3. Boss Pre-Mortem (Replaces School Feynman Recitation)
-
-To unlock `weapon_unlocked` and drop a `playbook` card without tedious definitions, ask ONLY:
-1. Where does a naive player blow up here?
-2. What 1 structural switch or red-team check flips the odds?
-If the learner nails both in plain language, mint the card immediately via `learn.mjs record`.
+| `panorama_mapped` | `panorama` | `L1_panoramic` | `false` |
+| `lateral_breakthrough` | `sparring` | `L3_radar_and_bs_proof` (or `L4` with real deal) | `false` |
+| `calibrated_mastery` | `sparring` | `L2_conversational` -> `L3_radar_and_bs_proof` | `false` |
+| `bullshit_exposed` | `bullshit-audit` | `L3_radar_and_bs_proof` | `false` |
+| `xray_spotted` | `xray` | `L3_radar_and_bs_proof` | `false` |
+| `sharp_but_tripped` | `sparring` / `xray` | `L2_conversational` | `true` (locks `--tripwire`) |
+| `confident_blindspot` | `sparring` / `xray` | `L1_panoramic` | `true` |
+| `fooled_by_jargon` | `bullshit-audit` | `L1_panoramic` | `true` |

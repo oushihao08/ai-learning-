@@ -1,20 +1,28 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "learner_id": "jack",
   "active_project": "jack-legal",
   "preferred_round_minutes": 8,
   "scoreboard": {
     "rounds_played": 0,
-    "weapons_unlocked": 1,
+    "weapons_unlocked": 0,
     "sparks_harvested": 2,
     "lateral_breakthroughs": 0,
-    "tripwires_caught": 0
+    "tripwires_caught": 0,
+    "bullshit_traps_exposed": 0
   },
+  "friction_watchlist": [],
+  "delegated_ai_gates": [],
   "calibration_distribution": {
+    "panorama_mapped": 2,
     "lateral_breakthrough": 0,
     "calibrated_mastery": 0,
+    "bullshit_exposed": 0,
+    "xray_spotted": 0,
     "sharp_but_tripped": 0,
-    "confident_blindspot": 0
+    "confident_blindspot": 0,
+    "fooled_by_jargon": 0,
+    "harvested_battle": 1
   },
-  "updated_at": "2026-11-26T07:31:53.568Z"
+  "updated_at": "2026-11-26T09:48:47.452Z"
 }

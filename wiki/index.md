@@ -1,8 +1,8 @@
 # Jack 星系母法知识图谱索引
 
-> 本索引与 `wiki/graph.json` 由 `cli/learn.mjs build-graph` 自动同步编译；支持在 LLM Wiki 桌面端或 Obsidian 中直接打开浏览星系双链图谱。
+> 本索引与 `wiki/graph.json` 由 `cli/learn.mjs build-graph` 自动同步编译；支持在 LLM Wiki 桌面端或 Obsidian 中直接打开浏览。
 
-- [[overview]] — 星系总览（节点总数：19，语义连接边：80）
+- [[overview]] — 星系总览（节点总数：23，语义边：100，公法/刑法止损墙：4）
 
 ## 中心恒星：通用破局母法（Master OS）（4）
 
@@ -19,15 +19,19 @@
 - [[mm-04-procedural-gates-and-time-locks]] — 程序前置与死线锁：分清能续命的时效与一秒熔断的除斥期 `[mapped]`
 - [[mm-05-waterfall-and-net-payoff]] — 清偿瀑布与净赔率：纸面赢一千万不如排在分钱第一顺位 `[mapped]`
 
-## 高压规则对撞区（Fault Lines）（3）
+## 高压规则对撞与公法禁区（Fault Lines）（6）
 
 - [[fl-01-pe-repurchase-vs-capital-reduction]] — 对赌股权回购生死门：目标公司没走完减资，赢了合同也拿不到钱 `[mapped]`
 - [[fl-02-unauthorized-guarantee-vs-apparent-authority]] — 公司对外担保大坑：法人亲手盖真公章，没审决议照样砍半或免责 `[mapped]`
 - [[fl-03-deemed-acceptance-vs-fundamental-breach]] — 软件与AI项目尾款战：“逾期视为验收合格”撞上“主功能烂尾” `[mapped]`
+- [[fl-04-criminal-civil-crossover-redlines]] — 保命底线：创业者与技术人严禁野路子试探的四条“民转刑”高压墙 `[mapped]`
+- [[fl-05-new-company-law-capital-and-veil]] — 公司底盘大变天：认缴加速到期、转股前手追责与“刺破公司面纱” `[mapped]`
+- [[fl-06-ip-ownership-labor-2n-and-tax-4flow]] — 科技公司三大日常暗坑：外包源码归乙方、愤怒裁员赔2N、专票四流红线 `[mapped]`
 
-## 一页破局武器卡（Playbooks）（1）
+## 一页破局与鉴谎武器卡（Playbooks）（2）
 
-- [[pb-01-ai-legal-55pct-radar]] — 武器卡 01：30 秒看穿 AI 法务方案“假专业”的五眼雷达 `[battle_proven]`
+- [[pb-01-ai-legal-55pct-radar]] — 武器卡 01：30 秒看穿 AI 法务方案“假专业”的五眼雷达 `[probed]`
+- [[pb-02-lawyer-fee-and-bs-detector]] — 武器卡 02：外聘律师四大收费猫腻与五句镇场鉴谎刀 `[mapped]`
 
 ## 发散者红队防雷卡（Tripwires）（3）
 
@@ -37,5 +41,5 @@
 
 ## 日常实战零散火花（Harvested Sparks）（2）
 
-- [[sp-01-why-sota-models-fail-real-law]] — 实战火花 01：背熟全量法条的大模型为何在真案卷前只考 ≤55%？ `[battle_proven]`
+- [[sp-01-why-sota-models-fail-real-law]] — 实战火花 01：背熟全量法条的大模型为何在真案卷前只考 ≤55%？ `[probed]`
 - [[sp-02-intent-vs-lease-lock]] — 实战火花 02：共享业务意图与实际执行锁分离（队列防撞车 ↔ 合同物债二分） `[battle_proven]`

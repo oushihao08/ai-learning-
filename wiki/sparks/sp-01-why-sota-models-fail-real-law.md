@@ -3,8 +3,8 @@ id: sp-01-why-sota-models-fail-real-law
 type: spark
 title: 实战火花 01：背熟全量法条的大模型为何在真案卷前只考 ≤55%？
 domain: legal-ai
-mastery: battle_proven
-confidence: 0.92
+mastery: probed
+confidence: 0.72
 hubs:
   - mos-03-asymmetric-payoff
   - mos-04-lateral-restructure
