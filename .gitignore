@@ -1,0 +1,9 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.llm-wiki/
+.obsidian/
+node_modules/
+执行观察/
+*.log

@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "learner_id": "jack",
+  "active_project": "jack-legal",
+  "preferred_round_minutes": 8,
+  "scoreboard": {
+    "rounds_played": 0,
+    "weapons_unlocked": 1,
+    "sparks_harvested": 2,
+    "lateral_breakthroughs": 0,
+    "tripwires_caught": 0
+  },
+  "calibration_distribution": {
+    "lateral_breakthrough": 0,
+    "calibrated_mastery": 0,
+    "sharp_but_tripped": 0,
+    "confident_blindspot": 0
+  },
+  "updated_at": "2026-11-26T07:31:53.568Z"
+}

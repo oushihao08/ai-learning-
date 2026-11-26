@@ -1,0 +1,876 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-26T07:31:53.688Z",
+  "stats": {
+    "total_nodes": 19,
+    "total_edges": 80,
+    "by_type": {
+      "master-os": 4,
+      "concept": 5,
+      "fault-line": 3,
+      "playbook": 1,
+      "tripwire": 3,
+      "spark": 2
+    },
+    "hub_gravity": [
+      {
+        "id": "mos-01-endgame-and-leverage",
+        "title": "母法一：终局底牌与筹码锚定（谁捏着命门、凭什么要结果）",
+        "connected_edges": 8
+      },
+      {
+        "id": "mos-02-state-locks-and-gates",
+        "title": "母法二：状态锁与不可逆闸门（区分答应与交割、盯死硬熔断）",
+        "connected_edges": 18
+      },
+      {
+        "id": "mos-03-asymmetric-payoff",
+        "title": "母法三：非对称赔率与底账穿透（只认不可变底账、算净落袋收益）",
+        "connected_edges": 12
+      },
+      {
+        "id": "mos-04-lateral-restructure",
+        "title": "母法四：升维改规矩与 AI 苦力外包（野路子破死局，80%细节甩给AI）",
+        "connected_edges": 12
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "overview",
+      "type": "overview",
+      "title": "Jack 个人破局母法与跨领域知识图谱总览",
+      "domain": "meta",
+      "mastery": "battle_proven",
+      "confidence": 1,
+      "hubs": [],
+      "tags": [
+        "master-os",
+        "knowledge-graph",
+        "legal",
+        "ai-agent"
+      ],
+      "path": "wiki/overview.md",
+      "summary": "本图谱不是按学科堆砌的教材仓库，而是围绕你自己的四步通用破局母法（Master OS）运转的星系网络：不管是系统闯关立项（如 `jack-legal`），还是平时写代码、做 `ai",
+      "degree": 17
+    },
+    {
+      "id": "mos-01-endgame-and-leverage",
+      "type": "master-os",
+      "title": "母法一：终局底牌与筹码锚定（谁捏着命门、凭什么要结果）",
+      "domain": "meta",
+      "mastery": "battle_proven",
+      "confidence": 1,
+      "hubs": [],
+      "tags": [
+        "master-os",
+        "leverage",
+        "first-principles"
+      ],
+      "path": "wiki/master-os/mos-01-endgame-and-leverage.md",
+      "summary": "面对任何一团乱麻的技术故障、商业扯皮或陌生行业难题，绝不顺着别人的情绪或章节顺序往下陷，第一秒直接倒推终局：",
+      "degree": 8
+    },
+    {
+      "id": "mos-02-state-locks-and-gates",
+      "type": "master-os",
+      "title": "母法二：状态锁与不可逆闸门（区分答应与交割、盯死硬熔断）",
+      "domain": "meta",
+      "mastery": "battle_proven",
+      "confidence": 1,
+      "hubs": [],
+      "tags": [
+        "master-os",
+        "state-machine",
+        "gates"
+      ],
+      "path": "wiki/master-os/mos-02-state-locks-and-gates.md",
+      "summary": "一切复杂系统本质上都是状态机。平庸者看表态，高手只盯状态跃迁的硬锁：",
+      "degree": 18
+    },
+    {
+      "id": "mos-03-asymmetric-payoff",
+      "type": "master-os",
+      "title": "母法三：非对称赔率与底账穿透（只认不可变底账、算净落袋收益）",
+      "domain": "meta",
+      "mastery": "battle_proven",
+      "confidence": 1,
+      "hubs": [],
+      "tags": [
+        "master-os",
+        "payoff",
+        "ground-truth"
+      ],
+      "path": "wiki/master-os/mos-03-asymmetric-payoff.md",
+      "summary": "不听故事、不看表面大数字，永远做两层穿透：",
+      "degree": 12
+    },
+    {
+      "id": "mos-04-lateral-restructure",
+      "type": "master-os",
+      "title": "母法四：升维改规矩与 AI 苦力外包（野路子破死局，80%细节甩给AI）",
+      "domain": "meta",
+      "mastery": "battle_proven",
+      "confidence": 1,
+      "hubs": [],
+      "tags": [
+        "master-os",
+        "lateral-thinking",
+        "ai-delegation"
+      ],
+      "path": "wiki/master-os/mos-04-lateral-restructure.md",
+      "summary": "这是你对比传统专家与细节控最大的非对称优势：",
+      "degree": 12
+    },
+    {
+      "id": "mm-01-claim-basis-dispatch",
+      "type": "concept",
+      "title": "请求权基础：先锁哪条规则能直接给你要来钱",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-01-endgame-and-leverage"
+      ],
+      "tags": [
+        "legal",
+        "claim-basis"
+      ],
+      "path": "wiki/concepts/mm-01-claim-basis-dispatch.md",
+      "summary": "直挂 [[mos-01-endgame-and-leverage]]：像后端 API 路由鉴权一样，不喊委屈，第一秒先锁死「谁 → 找谁 → 调哪条合同/法律接口 → 拿什么结果」",
+      "degree": 10
+    },
+    {
+      "id": "mm-02-obligation-vs-disposition",
+      "type": "concept",
+      "title": "物债二分：签字答应你（Promise）不等于东西归了你（Commit）",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-02-state-locks-and-gates"
+      ],
+      "tags": [
+        "legal",
+        "property-vs-contract"
+      ],
+      "path": "wiki/concepts/mm-02-obligation-vs-disposition.md",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]：完全等价于分布式系统里的下单返回 `Promise`（签合同产生相对债权）与底层账本最终 `Commit`（",
+      "degree": 8
+    },
+    {
+      "id": "mm-03-evidence-log-hierarchy",
+      "type": "concept",
+      "title": "证据底账穿透：只认第三方不可变流水，击穿一切单方故事",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-03-asymmetric-payoff"
+      ],
+      "tags": [
+        "legal",
+        "evidence"
+      ],
+      "path": "wiki/concepts/mm-03-evidence-log-hierarchy.md",
+      "summary": "直挂 [[mos-03-asymmetric-payoff]]：就像排查线上资损只信银行清算网关日志、绝不信客户端上报字段一样，法律只认证据能闭环还原的事实，不认“你自己知道的客观",
+      "degree": 8
+    },
+    {
+      "id": "mm-04-procedural-gates-and-time-locks",
+      "type": "concept",
+      "title": "程序前置与死线锁：分清能续命的时效与一秒熔断的除斥期",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-02-state-locks-and-gates"
+      ],
+      "tags": [
+        "legal",
+        "procedure",
+        "deadline"
+      ],
+      "path": "wiki/concepts/mm-04-procedural-gates-and-time-locks.md",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]：相当于网关层的路由白名单（管辖/仲裁）+ 前置阻塞中间件 + 两种截然不同的超时器，程序门没开，实体再有理也",
+      "degree": 7
+    },
+    {
+      "id": "mm-05-waterfall-and-net-payoff",
+      "type": "concept",
+      "title": "清偿瀑布与净赔率：纸面赢一千万不如排在分钱第一顺位",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-03-asymmetric-payoff"
+      ],
+      "tags": [
+        "legal",
+        "waterfall",
+        "enforcement"
+      ],
+      "path": "wiki/concepts/mm-05-waterfall-and-net-payoff.md",
+      "summary": "直挂 [[mos-03-asymmetric-payoff]]：不看胜诉判决书上的面子数字，只算资金清分瀑布流（Waterfall）流到你这一层还剩几分钱真现金。",
+      "degree": 5
+    },
+    {
+      "id": "fl-01-pe-repurchase-vs-capital-reduction",
+      "type": "fault-line",
+      "title": "对赌股权回购生死门：目标公司没走完减资，赢了合同也拿不到钱",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-02-state-locks-and-gates",
+        "mos-04-lateral-restructure"
+      ],
+      "tags": [
+        "legal",
+        "pe-vc",
+        "corporate"
+      ],
+      "path": "wiki/fault-lines/fl-01-pe-repurchase-vs-capital-reduction.md",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]] + [[mos-04-lateral-restructure]]：普通商业协议（User Space）撞上了",
+      "degree": 7
+    },
+    {
+      "id": "fl-02-unauthorized-guarantee-vs-apparent-authority",
+      "type": "fault-line",
+      "title": "公司对外担保大坑：法人亲手盖真公章，没审决议照样砍半或免责",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-02-state-locks-and-gates"
+      ],
+      "tags": [
+        "legal",
+        "guarantee",
+        "corporate"
+      ],
+      "path": "wiki/fault-lines/fl-02-unauthorized-guarantee-vs-apparent-authority.md",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]：普通买卖认单签（公章），唯独“替别人担保兜底”在全国法律层面强制开启了多签（Multi-Sig：`真公章 +",
+      "degree": 6
+    },
+    {
+      "id": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "type": "fault-line",
+      "title": "软件与AI项目尾款战：“逾期视为验收合格”撞上“主功能烂尾”",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "hubs": [
+        "mos-04-lateral-restructure",
+        "mos-03-asymmetric-payoff"
+      ],
+      "tags": [
+        "legal",
+        "software-contract",
+        "acceptance"
+      ],
+      "path": "wiki/fault-lines/fl-03-deemed-acceptance-vs-fundamental-breach.md",
+      "summary": "直挂 [[mos-04-lateral-restructure]] + [[mos-03-asymmetric-payoff]]：靠一纸“10 天不回函视为合格”打官司追尾款是下策",
+      "degree": 7
+    },
+    {
+      "id": "pb-01-ai-legal-55pct-radar",
+      "type": "playbook",
+      "title": "武器卡 01：30 秒看穿 AI 法务方案“假专业”的五眼雷达",
+      "domain": "legal",
+      "mastery": "battle_proven",
+      "confidence": 0.9,
+      "hubs": [
+        "mos-03-asymmetric-payoff",
+        "mos-04-lateral-restructure"
+      ],
+      "tags": [
+        "playbook",
+        "weapon-card",
+        "ai-distill",
+        "legal-qa"
+      ],
+      "path": "wiki/playbooks/pb-01-ai-legal-55pct-radar.md",
+      "summary": "即战用途：审 `ai-distill` 法律题包/模型答卷，或看外聘律师/AI 写的合同意见书时，不用读完几千字，只扫这 5 眼：",
+      "degree": 7
+    },
+    {
+      "id": "tw-01-chop-without-resolution",
+      "type": "tripwire",
+      "title": "红队暗雷 01：只验真公章，漏要回避表决后的股东会决议",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.4,
+      "hubs": [
+        "mos-02-state-locks-and-gates"
+      ],
+      "tags": [
+        "tripwire",
+        "red-team",
+        "corporate"
+      ],
+      "path": "wiki/tripwires/tw-01-chop-without-resolution.md",
+      "summary": "- 发散者为什么会踩：谈妥大局后觉得“老板本人都签字盖真章了，还折腾啥形式主义纸片”。",
+      "degree": 5
+    },
+    {
+      "id": "tw-02-hard-caducity-timeout",
+      "type": "tripwire",
+      "title": "红队暗雷 02：把一到点就清零的“除斥期”当成发微信能续命的时效",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.4,
+      "hubs": [
+        "mos-02-state-locks-and-gates"
+      ],
+      "tags": [
+        "tripwire",
+        "red-team",
+        "deadline"
+      ],
+      "path": "wiki/tripwires/tw-02-hard-caducity-timeout.md",
+      "summary": "- 发散者为什么会踩：觉得一直在拉扯谈判、微信一直在催，权利肯定还在。",
+      "degree": 9
+    },
+    {
+      "id": "tw-03-self-help-cut-without-clause",
+      "type": "tripwire",
+      "title": "红队暗雷 03：用技术拉闸/删库逼付尾款，没预埋免责条款反遭反杀",
+      "domain": "legal",
+      "mastery": "mapped",
+      "confidence": 0.4,
+      "hubs": [
+        "mos-04-lateral-restructure",
+        "mos-01-endgame-and-leverage"
+      ],
+      "tags": [
+        "tripwire",
+        "red-team",
+        "software"
+      ],
+      "path": "wiki/tripwires/tw-03-self-help-cut-without-clause.md",
+      "summary": "- 发散者为什么会踩：遇到甲方拖欠尾款，技术人第一反应“我直接把线上服务停了或埋个逻辑锁看他急不急”。",
+      "degree": 5
+    },
+    {
+      "id": "sp-01-why-sota-models-fail-real-law",
+      "type": "spark",
+      "title": "实战火花 01：背熟全量法条的大模型为何在真案卷前只考 ≤55%？",
+      "domain": "legal-ai",
+      "mastery": "battle_proven",
+      "confidence": 0.92,
+      "hubs": [
+        "mos-03-asymmetric-payoff",
+        "mos-04-lateral-restructure"
+      ],
+      "tags": [
+        "spark",
+        "ai-distill",
+        "meta-learning"
+      ],
+      "path": "wiki/sparks/sp-01-why-sota-models-fail-real-law.md",
+      "summary": "直挂 [[mos-03-asymmetric-payoff]] + [[mos-04-lateral-restructure]]：这直接从反面证明了“学法务千万别去背条文和格式”—",
+      "degree": 7
+    },
+    {
+      "id": "sp-02-intent-vs-lease-lock",
+      "type": "spark",
+      "title": "实战火花 02：共享业务意图与实际执行锁分离（队列防撞车 ↔ 合同物债二分）",
+      "domain": "agent-arch",
+      "mastery": "battle_proven",
+      "confidence": 0.9,
+      "hubs": [
+        "mos-02-state-locks-and-gates"
+      ],
+      "tags": [
+        "spark",
+        "agent-arch"
+      ],
+      "path": "wiki/sparks/sp-02-intent-vs-lease-lock.md",
+      "summary": "直挂 [[mos-02-state-locks-and-gates]]，跨界联动 [[mm-02-obligation-vs-disposition]]。",
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "overview",
+      "target": "mos-01-endgame-and-leverage",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mos-04-lateral-restructure",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mm-01-claim-basis-dispatch",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mm-02-obligation-vs-disposition",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mm-03-evidence-log-hierarchy",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mm-04-procedural-gates-and-time-locks",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "mm-05-waterfall-and-net-payoff",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "fl-01-pe-repurchase-vs-capital-reduction",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "fl-02-unauthorized-guarantee-vs-apparent-authority",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "tw-01-chop-without-resolution",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "tw-02-hard-caducity-timeout",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "tw-03-self-help-cut-without-clause",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "pb-01-ai-legal-55pct-radar",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "overview",
+      "target": "sp-01-why-sota-models-fail-real-law",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-01-endgame-and-leverage",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-01-endgame-and-leverage",
+      "target": "mos-04-lateral-restructure",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-01-endgame-and-leverage",
+      "target": "mm-01-claim-basis-dispatch",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-01-endgame-and-leverage",
+      "target": "tw-03-self-help-cut-without-clause",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "mos-01-endgame-and-leverage",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "mm-02-obligation-vs-disposition",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "mm-04-procedural-gates-and-time-locks",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "fl-01-pe-repurchase-vs-capital-reduction",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "fl-02-unauthorized-guarantee-vs-apparent-authority",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "tw-01-chop-without-resolution",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-02-state-locks-and-gates",
+      "target": "tw-02-hard-caducity-timeout",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-03-asymmetric-payoff",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-03-asymmetric-payoff",
+      "target": "mos-04-lateral-restructure",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-03-asymmetric-payoff",
+      "target": "mm-03-evidence-log-hierarchy",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-03-asymmetric-payoff",
+      "target": "mm-05-waterfall-and-net-payoff",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-04-lateral-restructure",
+      "target": "mos-01-endgame-and-leverage",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-04-lateral-restructure",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mos-04-lateral-restructure",
+      "target": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mos-04-lateral-restructure",
+      "target": "pb-01-ai-legal-55pct-radar",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mm-01-claim-basis-dispatch",
+      "target": "mos-01-endgame-and-leverage",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "mm-01-claim-basis-dispatch",
+      "target": "mm-02-obligation-vs-disposition",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mm-01-claim-basis-dispatch",
+      "target": "mm-04-procedural-gates-and-time-locks",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mm-01-claim-basis-dispatch",
+      "target": "tw-02-hard-caducity-timeout",
+      "rel": "mentions",
+      "explicit": false
+    },
+    {
+      "source": "mm-02-obligation-vs-disposition",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "mm-02-obligation-vs-disposition",
+      "target": "mm-01-claim-basis-dispatch",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mm-02-obligation-vs-disposition",
+      "target": "mm-05-waterfall-and-net-payoff",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mm-03-evidence-log-hierarchy",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "mm-03-evidence-log-hierarchy",
+      "target": "mm-01-claim-basis-dispatch",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mm-03-evidence-log-hierarchy",
+      "target": "sp-01-why-sota-models-fail-real-law",
+      "rel": "lateral_leap_to",
+      "explicit": true
+    },
+    {
+      "source": "mm-04-procedural-gates-and-time-locks",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "mm-04-procedural-gates-and-time-locks",
+      "target": "tw-02-hard-caducity-timeout",
+      "rel": "guards_against",
+      "explicit": true
+    },
+    {
+      "source": "mm-04-procedural-gates-and-time-locks",
+      "target": "mm-01-claim-basis-dispatch",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "mm-05-waterfall-and-net-payoff",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "mm-05-waterfall-and-net-payoff",
+      "target": "mm-02-obligation-vs-disposition",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "fl-01-pe-repurchase-vs-capital-reduction",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-01-pe-repurchase-vs-capital-reduction",
+      "target": "mos-04-lateral-restructure",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-01-pe-repurchase-vs-capital-reduction",
+      "target": "mm-01-claim-basis-dispatch",
+      "rel": "collides_with",
+      "explicit": true
+    },
+    {
+      "source": "fl-01-pe-repurchase-vs-capital-reduction",
+      "target": "tw-02-hard-caducity-timeout",
+      "rel": "guards_against",
+      "explicit": true
+    },
+    {
+      "source": "fl-02-unauthorized-guarantee-vs-apparent-authority",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-02-unauthorized-guarantee-vs-apparent-authority",
+      "target": "mm-03-evidence-log-hierarchy",
+      "rel": "collides_with",
+      "explicit": true
+    },
+    {
+      "source": "fl-02-unauthorized-guarantee-vs-apparent-authority",
+      "target": "tw-01-chop-without-resolution",
+      "rel": "guards_against",
+      "explicit": true
+    },
+    {
+      "source": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "target": "mos-04-lateral-restructure",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "target": "mm-03-evidence-log-hierarchy",
+      "rel": "collides_with",
+      "explicit": true
+    },
+    {
+      "source": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "target": "tw-03-self-help-cut-without-clause",
+      "rel": "guards_against",
+      "explicit": true
+    },
+    {
+      "source": "pb-01-ai-legal-55pct-radar",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "pb-01-ai-legal-55pct-radar",
+      "target": "mos-04-lateral-restructure",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "pb-01-ai-legal-55pct-radar",
+      "target": "sp-01-why-sota-models-fail-real-law",
+      "rel": "lateral_leap_to",
+      "explicit": true
+    },
+    {
+      "source": "pb-01-ai-legal-55pct-radar",
+      "target": "tw-02-hard-caducity-timeout",
+      "rel": "guards_against",
+      "explicit": true
+    },
+    {
+      "source": "tw-01-chop-without-resolution",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "tw-01-chop-without-resolution",
+      "target": "fl-02-unauthorized-guarantee-vs-apparent-authority",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "tw-02-hard-caducity-timeout",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "tw-02-hard-caducity-timeout",
+      "target": "mm-04-procedural-gates-and-time-locks",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "tw-02-hard-caducity-timeout",
+      "target": "fl-01-pe-repurchase-vs-capital-reduction",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "tw-03-self-help-cut-without-clause",
+      "target": "mos-04-lateral-restructure",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "tw-03-self-help-cut-without-clause",
+      "target": "fl-03-deemed-acceptance-vs-fundamental-breach",
+      "rel": "related_lens",
+      "explicit": true
+    },
+    {
+      "source": "sp-01-why-sota-models-fail-real-law",
+      "target": "mos-03-asymmetric-payoff",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "sp-01-why-sota-models-fail-real-law",
+      "target": "mos-04-lateral-restructure",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "sp-01-why-sota-models-fail-real-law",
+      "target": "pb-01-ai-legal-55pct-radar",
+      "rel": "unlocks_weapon",
+      "explicit": true
+    },
+    {
+      "source": "sp-01-why-sota-models-fail-real-law",
+      "target": "mm-03-evidence-log-hierarchy",
+      "rel": "lateral_leap_to",
+      "explicit": true
+    },
+    {
+      "source": "sp-02-intent-vs-lease-lock",
+      "target": "mos-02-state-locks-and-gates",
+      "rel": "assimilates_into",
+      "explicit": true
+    },
+    {
+      "source": "sp-02-intent-vs-lease-lock",
+      "target": "mm-02-obligation-vs-disposition",
+      "rel": "lateral_leap_to",
+      "explicit": true
+    }
+  ]
+}

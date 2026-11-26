@@ -1,0 +1,48 @@
+{
+  "schema_version": 3,
+  "slug": "jack-legal",
+  "free_jump": true,
+  "arenas": [
+    {
+      "id": "arena-tech-deal",
+      "title": "战区 1：软件/AI 商业交付与收款锁死（最贴近日常接单与采购）",
+      "fast_win_promise": "10 分钟搞懂怎么改交易与技术降级条款，让尾款赖不掉且自己绝不踩刑责/违约雷",
+      "nodes": [
+        "fl-03-deemed-acceptance-vs-fundamental-breach",
+        "tw-03-self-help-cut-without-clause",
+        "mm-03-evidence-log-hierarchy"
+      ]
+    },
+    {
+      "id": "arena-corp-shield",
+      "title": "战区 2：公司股权、对赌回购与真公章防坑（老板/合伙人保命符）",
+      "fast_win_promise": "10 分钟识破『真公章假担保』与『目标公司回购死锁』两颗百万级暗雷",
+      "nodes": [
+        "fl-02-unauthorized-guarantee-vs-apparent-authority",
+        "tw-01-chop-without-resolution",
+        "fl-01-pe-repurchase-vs-capital-reduction",
+        "tw-02-hard-caducity-timeout"
+      ]
+    },
+    {
+      "id": "arena-money-waterfall",
+      "title": "战区 3：资产交割、抢钱顺位与要债底牌（防赢了官司拿0元）",
+      "fast_win_promise": "10 分钟摸透签字与过户分离锁、优先受偿瀑布阶梯与请求权选道",
+      "nodes": [
+        "mm-01-claim-basis-dispatch",
+        "mm-02-obligation-vs-disposition",
+        "mm-04-procedural-gates-and-time-locks",
+        "mm-05-waterfall-and-net-payoff"
+      ]
+    },
+    {
+      "id": "arena-ai-distill-qa",
+      "title": "战区 4：ai-distill 法律评测秒审雷达（直接赋能手头项目）",
+      "fast_win_promise": "30 秒抓出任何 AI 法律题包或模型长文里的顺从讨好与证据断链漏洞",
+      "nodes": [
+        "pb-01-ai-legal-55pct-radar",
+        "sp-01-why-sota-models-fail-real-law"
+      ]
+    }
+  ]
+}

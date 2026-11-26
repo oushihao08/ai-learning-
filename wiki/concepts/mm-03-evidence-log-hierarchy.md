@@ -1,0 +1,47 @@
+---
+id: mm-03-evidence-log-hierarchy
+type: concept
+title: 证据底账穿透：只认第三方不可变流水，击穿一切单方故事
+domain: legal
+mastery: mapped
+confidence: 0.35
+hubs:
+  - mos-03-asymmetric-payoff
+edges:
+  - rel: assimilates_into
+    target: mos-03-asymmetric-payoff
+  - rel: related_lens
+    target: mm-01-claim-basis-dispatch
+  - rel: lateral_leap_to
+    target: sp-01-why-sota-models-fail-real-law
+tags:
+  - legal
+  - evidence
+related:
+  - mos-03-asymmetric-payoff
+  - mm-01-claim-basis-dispatch
+  - sp-01-why-sota-models-fail-real-law
+evidence_refs: []
+created: 2026-11-26
+updated: 2026-11-26
+---
+
+# 证据底账穿透：只认第三方不可变流水，击穿一切单方故事
+
+## 挂入我的母法
+
+直挂 [[mos-03-asymmetric-payoff]]：就像排查线上资损只信银行清算网关日志、绝不信客户端上报字段一样，法律只认**证据能闭环还原的事实**，不认“你自己知道的客观真相”。
+
+## 主帅必抓的 20% 胜负开关
+
+1. **证据鄙视链**：`公证/生效裁判/工商税务银行底账/法院送达回证 > 双方签章原件 > 来往邮件与完整聊天流 > 单方汇总表/诉状自述（最低级）`。胜负往往藏在边缘一张退票回单或转账备注里。
+2. **真伪不明时谁举证谁死**：当关键事实没有留痕（状态为 `null`）时，谁负举证责任谁直接败诉。
+3. **严防随口“自认”**：正式函件、会议纪要或庭审里一句承认对方数字的话，会直接锁死免证，事后极难翻供。
+
+## 直接甩给 AI 干的 80% 细节（不必深学）
+
+- 证据目录三性（真实性、合法性、关联性）八股写法、几十份银行回单逐笔去重核对，**全部丢给 AI 脚本跑**；你只盯“汇总表和原始回单对不上的那几笔异常”。
+
+## 发散者易踩的 1 颗暗雷
+
+发散型谈生意习惯口头敲定大方向、群里随手回个“OK”——出事时才发现对方留了全套书面签收单，而你的关键前提全是电话口头说的。

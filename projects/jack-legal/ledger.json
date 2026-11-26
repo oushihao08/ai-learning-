@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "slug": "jack-legal",
+  "nodes": {
+    "mm-01-claim-basis-dispatch": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "mm-02-obligation-vs-disposition": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "mm-03-evidence-log-hierarchy": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "mm-04-procedural-gates-and-time-locks": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "mm-05-waterfall-and-net-payoff": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "fl-01-pe-repurchase-vs-capital-reduction": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "fl-02-unauthorized-guarantee-vs-apparent-authority": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "fl-03-deemed-acceptance-vs-fundamental-breach": {
+      "mastery": "mapped",
+      "confidence": 0.35,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "tw-01-chop-without-resolution": {
+      "mastery": "mapped",
+      "confidence": 0.40,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "tw-02-hard-caducity-timeout": {
+      "mastery": "mapped",
+      "confidence": 0.40,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "tw-03-self-help-cut-without-clause": {
+      "mastery": "mapped",
+      "confidence": 0.40,
+      "attempts": 0,
+      "last_verdict": null,
+      "retest_required": false,
+      "evidence_refs": []
+    },
+    "pb-01-ai-legal-55pct-radar": {
+      "mastery": "battle_proven",
+      "confidence": 0.90,
+      "attempts": 1,
+      "last_verdict": "harvested_from_work",
+      "retest_required": false,
+      "evidence_refs": [
+        "raw/sources/2026-11-26-work-legal-sota-55pct.md"
+      ]
+    },
+    "sp-01-why-sota-models-fail-real-law": {
+      "mastery": "battle_proven",
+      "confidence": 0.92,
+      "attempts": 1,
+      "last_verdict": "harvested_from_work",
+      "retest_required": false,
+      "evidence_refs": [
+        "raw/sources/2026-11-26-work-legal-sota-55pct.md"
+      ]
+    }
+  },
+  "updated_at": "2026-11-26T15:25:00+08:00"
+}

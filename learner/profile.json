@@ -1,0 +1,28 @@
+{
+  "schema_version": 3,
+  "learner_id": "jack",
+  "identity": {
+    "age": 34,
+    "engineering_years": 11,
+    "ai_agent_experience": "1y8m",
+    "core_style": "发散破局型统帅（Divergent Strategic Builder）：追求极高杠杆与即时正反馈，反感钻牛角尖式深潜和常规填鸭教育；习惯用自己的一套通用母法横扫跨界问题，思维跳跃不按常理，细枝末节交由 AI 红队参谋兜底。"
+  },
+  "master_os_hubs": [
+    "mos-01-endgame-and-leverage",
+    "mos-02-state-locks-and-gates",
+    "mos-03-asymmetric-payoff",
+    "mos-04-lateral-restructure"
+  ],
+  "cognitive_traits_and_design_rules": {
+    "high_efficiency_depth_ceiling": "严格执行 20/80 深度熔断：只学决定 80% 商业输赢的 20% 核心开关；法条背诵、八股排版、逐笔算账等 80% 琐碎细节明令禁止讲授，全部外包给 AI。",
+    "impatient_for_fast_wins": "取消前置串行解锁锁死，允许自由空降任意感兴趣的残局；每局 5-10 分钟必须当场产出一张可复用的《一页破局武器卡》或解决一个真坑。",
+    "divergent_lateral_advantage": "面对死局优先鼓励跳出原行业套路（用商业分账、产品开关、主体隔离等奇招破局），不拿死板教科书标准答案扼杀奇招。",
+    "detail_blindspot_red_team": "针对对比细节控容易漏看隐形红线的特点，由 AI 专职扮演细心红队参谋长，每次只精准抓出 1 颗致命细节暗雷（tripwire）打补丁。"
+  },
+  "hard_prohibitions": [
+    "日常干活提问时未经显式点名，严禁触发任何学习反问或设卡",
+    "严禁按教材章节线性推进或深入学院派学说考据",
+    "严禁使用 ABCD 单选题、填空题、法条默写或机械抽认卡",
+    "严禁在未挂载个人母法（mos-*）的情况下堆砌孤立知识点"
+  ]
+}

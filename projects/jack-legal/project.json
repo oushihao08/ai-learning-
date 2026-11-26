@@ -1,0 +1,17 @@
+{
+  "schema_version": 3,
+  "slug": "jack-legal",
+  "title": "Jack 学习法务（主帅风控与 ai-distill 破局实战）",
+  "domain": "legal",
+  "goal": "用个人四步母法掌握商事法务 20% 胜负手开关与细节防雷清单，80% 条文核算全部驱使 AI 完成，每局 5-10 分钟即时产出破局武器卡。",
+  "depth_ceiling_rule": "严禁深挖法条编号背诵、学派争议与文书八股；只聚焦筹码、状态锁、底账穿透、死线熔断与交易结构破局。",
+  "free_jump_enabled": true,
+  "source_anchors": [
+    "/Users/jack/Documents/codes/lvgou/ai-distill/projects/Work法律全场景/AGENTS.md",
+    "/Users/jack/Documents/codes/lvgou/ai-distill/projects/Work法律全场景/skill/SKILL.md",
+    "/Users/jack/Documents/codes/lvgou/ai-distill/projects/Work法律全场景/skill/assets/法律垂类场景与实务核查库.md",
+    "/Users/jack/Documents/codes/lvgou/ai-distill/projects/豆包高经济价值/skill/SKILL.md"
+  ],
+  "created_at": "2026-11-26",
+  "updated_at": "2026-11-26"
+}
