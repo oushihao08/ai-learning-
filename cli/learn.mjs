@@ -9,11 +9,13 @@
  *   - record <project> ...：结算快赢对练结果、更新 ledger/cognitive-state 并在通关时自动铸造一页武器卡
  *   - build-graph：扫描 wiki/**.md 生成 wiki/graph.json 与 wiki/index.md
  *   - init <slug> ...：初始化新领域快赢立项
+ *   - link-skill：将本仓库 skills/agent-learn 软链接挂载至 ~/.agents/skills 与 ~/.codex/skills
  *   - lint：强制校验母法挂载（零孤岛）、20/80 深度熔断栏、双链闭合与实证门禁
- * 调用方：用户终端、~/.agents/skills/agent-learn 主 Agent 及 Learning Graph Harvester 子 Agent。
+ * 调用方：用户终端、skills/agent-learn 主 Agent 及 Learning Graph Harvester 子 Agent。
  */
 
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, lstatSync, mkdirSync, readdirSync, readFileSync, statSync, symlinkSync, unlinkSync, writeFileSync } from "node:fs";
+import { homedir } from "node:os";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -874,11 +876,40 @@ function cmdLint() {
   console.log(`[PASS] 星系母法图谱 (${pages.length} 节点)、20/80 深度熔断、零孤岛连接与实证门禁全部通过校验。`);
 }
 
+function cmdLinkSkill() {
+  const sourceSkill = join(ROOT_DIR, "skills", "agent-learn");
+  if (!existsSync(join(sourceSkill, "SKILL.md"))) {
+    throw new Error(`仓库内未找到 Skill 源目录: ${sourceSkill}`);
+  }
+  const home = homedir();
+  const agentsDir = join(home, ".agents", "skills");
+  const codexDir = join(home, ".codex", "skills");
+  mkdirSync(agentsDir, { recursive: true });
+  mkdirSync(codexDir, { recursive: true });
+
+  const agentsLink = join(agentsDir, "agent-learn");
+  const codexLink = join(codexDir, "agent-learn");
+
+  for (const linkPath of [agentsLink, codexLink]) {
+    try {
+      const st = lstatSync(linkPath);
+      if (st.isSymbolicLink()) unlinkSync(linkPath);
+      else throw new Error(`${linkPath} 已存在且为实体目录，请核实后再挂载软链`);
+    } catch (err) {
+      if (err.code !== "ENOENT") throw err;
+    }
+  }
+
+  symlinkSync(sourceSkill, agentsLink);
+  symlinkSync("../../.agents/skills/agent-learn", codexLink);
+  console.log(`已挂载软链接:\n  ${agentsLink} -> ${sourceSkill}\n  ${codexLink} -> ../../.agents/skills/agent-learn`);
+}
+
 async function main() {
   const { positional, flags } = parseArgs(process.argv.slice(2));
   const sub = positional[0];
   if (!sub || flags.help || flags.h) {
-    console.log("用法: node cli/learn.mjs <status|context|graph|harvest|record|build-graph|init|lint> [options]");
+    console.log("用法: node cli/learn.mjs <status|context|graph|harvest|record|build-graph|init|link-skill|lint> [options]");
     return;
   }
   if (sub === "build-graph") {
@@ -897,6 +928,8 @@ async function main() {
     cmdRecord(positional[1], flags);
   } else if (sub === "init") {
     cmdInit(positional[1], flags);
+  } else if (sub === "link-skill") {
+    cmdLinkSkill();
   } else if (sub === "lint") {
     cmdLint();
   } else {

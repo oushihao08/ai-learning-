@@ -47,7 +47,10 @@ node /Users/jack/Documents/codes/lvgou/ai-learning/cli/learn.mjs build-graph
 # 7. 新建其他领域的专项快赢立项
 node /Users/jack/Documents/codes/lvgou/ai-learning/cli/learn.mjs init <slug> --title "<名称>" --domain "<领域>" --goal "<目标>"
 
-# 8. 全量门禁校验（无孤岛节点、强制挂载母法核、20/80 深度熔断栏、实证引用、双链闭合）
+# 8. 一键将本仓库 skills/agent-learn 软链挂载到 ~/.agents/skills 与 ~/.codex/skills
+node /Users/jack/Documents/codes/lvgou/ai-learning/cli/learn.mjs link-skill
+
+# 9. 全量门禁校验（无孤岛节点、强制挂载母法核、20/80 深度熔断栏、实证引用、双链闭合）
 node /Users/jack/Documents/codes/lvgou/ai-learning/cli/learn.mjs lint
 ```
 
