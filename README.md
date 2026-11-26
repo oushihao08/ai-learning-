@@ -2,7 +2,7 @@
 # AI-Learning：个人母法驱动的跨界快赢与星系知识图谱
 
 独立项目路径：`/Users/jack/Documents/codes/lvgou/ai-learning`  
-配套全局门控 Skill：[`/Users/jack/.agents/skills/agent-learn/SKILL.md`](file:///Users/jack/.agents/skills/agent-learn/SKILL.md)（软链同步至 `~/.codex/skills/agent-learn`）
+配套导学 Skill 唯一源码：[`skills/agent-learn/SKILL.md`](skills/agent-learn/SKILL.md)（`~/.agents/skills/agent-learn` 与 `~/.codex/skills/agent-learn` 均软链至此）
 
 专为**追求高效率、反感钻牛角尖学太深、急见战果、习惯用自身母法解决一切问题、思维发散不按常理**的实战型构建者设计：
 - **日常干活零打扰**：普通提问、查依据、写代码绝不误触发陪练反问；仅显式点名才开启，随时可秒退。
@@ -40,7 +40,7 @@
 │       ├── ledger.json                         # 逐节点战果与红队复测账本
 │       └── sessions/2026-11-26-fast-win-arena.md # 首轮 5 分钟快赢擂台（3 个真金白银商业残局）
 ├── cli/                                        # 零依赖状态与图谱引擎（learn.mjs）
-├── skills/agent-learn/                         # 随仓归档的导学与收割 Skill 模板（本机运行源位于 ~/.agents/skills/agent-learn）
+├── skills/agent-learn/                         # Skill 唯一维护源码（全局 ~/.agents/skills/agent-learn 软链指向此处）
 └── docs/                                       # 立项研究与架构文档区（01 原视频拆解 / 02 全球调研与变体 / 03 完整方案）
 ```
 
